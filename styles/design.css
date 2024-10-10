@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Common classes */
+*{
+    font-family:"Poppins", sans-serif ;
+    margin: 0;
+    padding: 0;
+}
+.common{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.description{
+    font-size: 1rem;
+    color: #3A3A3A;
+}
+
+/* Header section */
+
+.hamburger{
+    display: none;
+    /* color: blue; */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+nav h3{
+    font-size: 1.5rem;
+    color: #3A3A3A;
+}
+.nav-item-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-item-container a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #3A3A3A;
+    font-weight: 400;
+
+}
+/* End of Header Section */
+
+/* Main section */
+.journey{
+   
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+.journey-begin h3{
+    font-size: 3.25rem;
+}
+.pre-btn{
+    border: none;
+    background-color: #E02C6D;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin: 10px 0;
+}
+.main-camera-section{
+    background-image: url('../images/Circle design.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    margin-top: 40px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    border-top:1px solid rgba(128, 128, 128, 0.357);
+    border-bottom:1px solid rgba(128, 128, 128, 0.357);
+}
+.collection{
+    text-align: center;
+    padding: 10px 10px;
+   
+}
+.collection-title{
+    font-size: 1.75rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+   
+}
+.collection-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    
+}
+.collection-card{
+    /* background-color: aliceblue; */
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    box-shadow: 1px 1px 2px 0.5px rgba(142, 140, 140, 0.351);
+}
+.card-title{
+    font-size: 1.75;
+}
+.card-value{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.more-option{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+.more-option button{
+    display: flex;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    gap: 5px;
+    color: #E02C6D;
+    font-size: 1rem;
+}
+.feature{
+    margin-top: 20px;
+    /* padding: 20px; */
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 5px;
+    
+}
+.feature-img{
+    width: calc(80% - 60px);
+
+}
+.feature-img img{
+    width: 100%;
+}
+.feature-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:center ;
+    gap: 20px;
+}
+.feature-title{
+    font-size: 2.37rem;
+}
+.feature-btn{
+    background-color: #E02C6D;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 15px;
+    font-size: 1rem;
+}
+/* End of main */
+
+/* Footer section */
+footer{
+    background-color: #0A0826;
+    margin-top: 50px;
+    color: white;
+
+}
+.footer-container{
+    padding: 35px;
+    text-align: center;
+}
+.footer-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.footer-description{
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.footer-images{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+
+
+/* Responsive design for mobile devices */
+@media screen and (max-width:576px){
+    nav{
+        padding: 10px;
+    }
+    .hamburger{
+        display: flex;
+        align-items: center;
+        
+    }
+    nav h3{
+        font-size: 1rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    .journey{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .journey-begin h3{
+        padding: 5px;
+        font-size: 2rem ;
+    }
+    .main-camera-section img{
+        width: 100%;
+    }
+    .logo{
+        margin: 10px;
+        flex-wrap: wrap;
+        gap: 10px;
+        border: none;
+    }
+    .collection-container{
+        grid-template-columns: 1fr;
+    }
+    .collection-card{
+        /* padding: 20px; */
+        margin: 5px;
+
+    }
+    .feature{
+        text-align: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 5px;
+        /* padding: 20px; */
+    }
+    .feature-img{
+        margin: auto;
+        padding: 0;
+    }
+    .feature-info{
+        justify-content: center;
+        align-items: center;
+    }
+    .feature-img img{
+        width: 100%;
+    }
+}
+
+/* Responsive design for Medium display devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav{
+        padding: 10px;
+    }
+    .hamburger{
+        display: flex;
+        align-items: center;
+        
+    }
+    nav h3{
+        font-size: 1.5rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    .journey{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .journey-begin h3{
+        padding: 5px;
+        font-size: 3rem ;
+    }
+    .main-camera-section{
+        margin: 20px;
+    }
+    .main-camera-section img{
+        width: 100%;
+    }
+    .logo{
+        margin: 10px;
+        flex-wrap: wrap;
+        gap: 10px;
+        border: none;
+    }
+    .collection-container{
+        grid-template-columns: 1fr;
+    }
+    .collection-card{
+        padding: 30px;
+        margin: 20px;
+    }
+    .feature{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+    .feature-img{
+        margin: auto;
+    }
+    .feature-info{
+        justify-content: center;
+        align-items: center;
+    }
+    .feature-img img{
+        width: 100%;
+    }
+    
+
+}
